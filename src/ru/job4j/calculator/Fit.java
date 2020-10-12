@@ -15,10 +15,10 @@ public class Fit {
 
         short height = 187;
         double pipleWeight = Fit.manWeight(height);
-        System.out.println("Man "+height+" is " + String.format("%.2f",pipleWeight) + " kg");
+        System.out.println("Man " + height + " is " + String.format("%.2f", pipleWeight) + " kg");
 
         height = 165;
         pipleWeight = Fit.womanWeight(height);
-        System.out.println("woman "+height+" is " + String.format("%.2f",pipleWeight) + " kg");
+        System.out.println("woman " + height + " is " + String.format("%.2f", pipleWeight) + " kg");
     }
 }
