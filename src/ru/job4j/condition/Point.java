@@ -1,4 +1,4 @@
-package ru.job4j.calculator.ru.job4j.condition;
+package ru.job4j.condition;
 
 public class Point {
     public static void main(String[] args) {
@@ -6,6 +6,11 @@ public class Point {
         System.out.println("result:" + Point.distance(7, 330, 2, 0));
         System.out.println("result:" + Point.distance(11, 6, 120, 0));
         System.out.println("result:" + Point.distance(13, 99, 2, 0));
+        System.out.println("----");
+        System.out.println("result:" + Point.distance(1, 0, 2, 0));
+        System.out.println("result:" + Point.distance(1, 1, 2, 0));
+        System.out.println("result:" + Point.distance(1, 1, 2, 1));
+
     }
 
     public static double distance(int x1, int y1, int x2, int y2) {
