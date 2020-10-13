@@ -12,5 +12,17 @@ public class SqArea {
         int p = 6;
         int k = 2;
         System.out.println("p = " + p + ", k = " + k + "; result: " + SqArea.square(p, k));
+
+        p = 8;
+        k = 3;
+        System.out.println("p = " + p + ", k = " + k + "; result: " + SqArea.square(p, k));
+
+        p = 9;
+        k = 4;
+        System.out.println("p = " + p + ", k = " + k + "; result: " + SqArea.square(p, k));
+
+        p = 10;
+        k = 5;
+        System.out.println("p = " + p + ", k = " + k + "; result: " + SqArea.square(p, k));
     }
 }
