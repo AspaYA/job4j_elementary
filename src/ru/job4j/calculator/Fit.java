@@ -17,6 +17,10 @@ public class Fit {
         double pipleWeight = Fit.manWeight(height);
         System.out.println("Man " + height + " is " + String.format("%.2f", pipleWeight) + " kg");
 
+        height = 170;
+        pipleWeight = Fit.manWeight(height);
+        System.out.println("Man " + height + " is " + String.format("%.2f", pipleWeight) + " kg");
+
         height = 165;
         pipleWeight = Fit.womanWeight(height);
         System.out.println("woman " + height + " is " + String.format("%.2f", pipleWeight) + " kg");
