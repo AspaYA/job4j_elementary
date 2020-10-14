@@ -12,17 +12,12 @@ public class FitnessTest {
     }
 
     @Test
-    public void whenCalcU190U295Then0() {
+    public void whenCalcU190U295Then1() {
         assertThat(Fitness.calc(90, 95), is(1));
     }
 
     @Test
-    public void whenCalcU150U290Then0() {
+    public void whenCalcU150U290Then2() {
         assertThat(Fitness.calc(50, 90), is(2));
-    }
-
-    @Test
-    public void whenCalcU190U290Then0() {
-        assertThat(Fitness.calc(95, 90), is(0));
     }
 }
