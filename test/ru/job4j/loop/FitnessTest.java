@@ -20,4 +20,8 @@ public class FitnessTest {
     public void whenCalcU150U290Then2() {
         assertThat(Fitness.calc(50, 90), is(2));
     }
+    @Test
+    public void whenCalcU190U290Then1() {
+        assertThat(Fitness.calc(90, 90), is(1));
+    }
 }
