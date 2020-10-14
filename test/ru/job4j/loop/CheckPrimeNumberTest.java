@@ -15,6 +15,7 @@ public class CheckPrimeNumberTest {
     public void whenCheck4ThenFalse() {
         assertThat(CheckPrimeNumber.check(4), is(false));
     }
+
     @Test
     public void whenCheck1ThenFalse() {
         assertThat(CheckPrimeNumber.check(1), is(false));
