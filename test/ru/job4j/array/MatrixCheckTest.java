@@ -26,4 +26,15 @@ public class MatrixCheckTest {
         };
         assertThat(MatrixCheck.monoVertical(arr, 2), is(true));
     }
+
+    @Test
+    public void extractDiagonal() {
+        char[][] arr = {
+                {'X', ' ', ' '},
+                {' ', '-', ' '},
+                {' ', ' ', 'X'}
+        };
+        char[] expected = {'X', '-', 'X'};
+        assertThat(MatrixCheck.extractDiagonal(arr), is(expected));
+    }
 }
