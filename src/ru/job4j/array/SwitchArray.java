@@ -15,6 +15,13 @@ public class SwitchArray {
         return array;
     }
 
+    public static String[] swap(String[] array, int source, int dest) {
+        String tmp = array[source];
+        array[source] = array[dest];
+        array[dest] = tmp;
+        return array;
+    }
+
     public static void main(String[] args) {
         int[] nums = swapBorder(new int[]{1, 2, 3, 4, 5, 6});
         for (int num: nums) {
