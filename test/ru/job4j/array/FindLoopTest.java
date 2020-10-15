@@ -24,4 +24,22 @@ public class FindLoopTest {
         assertThat(rst, is(expected));
     }
 
+    @Test
+    public void whenIndexOfHas4ThenM1() {
+        int[] input = {50, 4, 3, 2, 1, 0};
+        int value = 4;
+        int expected = -1;
+        int rst = FindLoop.indexOf(input, value, 2, 5);
+        assertThat(rst, is(expected));
+    }
+
+    @Test
+    public void whenIndexOfHas4Then1() {
+        int[] input = {50, 4, 3, 2, 1, 0};
+        int value = 4;
+        int expected = 1;
+        int rst = FindLoop.indexOf(input, value, 1, 5);
+        assertThat(rst, is(expected));
+    }
+
 }
