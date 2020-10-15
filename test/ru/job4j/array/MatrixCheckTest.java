@@ -16,4 +16,14 @@ public class MatrixCheckTest {
         };
         assertThat(MatrixCheck.monoHorizontal(arr, 1), is(true));
     }
+
+    @Test
+    public void monoVertical() {
+        char[][] arr = {
+                {' ', ' ', 'X'},
+                {' ', ' ', 'X'},
+                {' ', ' ', 'X'}
+        };
+        assertThat(MatrixCheck.monoVertical(arr, 2), is(true));
+    }
 }
