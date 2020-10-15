@@ -37,4 +37,28 @@ public class MatrixCheckTest {
         char[] expected = {'X', '-', 'X'};
         assertThat(MatrixCheck.extractDiagonal(arr), is(expected));
     }
+
+    @Test
+    public void whenIsWinThenTrue() {
+        char[][] arr = {
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '}
+        };
+        assertThat(MatrixCheck.isWin(arr), is(true));
+    }
+
+    @Test
+    public void whenIsWinThenFalse() {
+        char[][] arr = {
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', 'X', ' ', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '}
+        };
+        assertThat(MatrixCheck.isWin(arr), is(false));
+    }
 }
