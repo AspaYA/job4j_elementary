@@ -24,4 +24,18 @@ public class Machine {
         }
         return Arrays.copyOf(rsl, size);
     }
-}
+
+    public int[] changeV1(int money, int price) {
+        int[] rsl = new int[100];
+        int size = 0;
+        int ch = (money - price);
+        for (int coin: coins) {
+            while (ch - coin >= 0) {
+                rsl[size] = coin;
+                ch = ch - coin;
+                size++;
+            }
+        }
+        return Arrays.copyOf(rsl, size);
+    }
+    }
